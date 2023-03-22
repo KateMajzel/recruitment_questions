@@ -18,66 +18,66 @@
 - Reverse array recursive, iterative, stream.
 
 ## Core
-- How can we construct a new object in Java (i.e. new operator, cloning, deserialization, reflection -> Class.forName())f
-- what primitive types do you know? What is the size of each?
-- Describe what is the meaning of following keywords: protected,  private, public, no keyword.
-- What is the difference between override and overload + static and runtime polymorphism.
-- How can you prevent class from being subclassed?
-- Transient keyword, what is it used for
-- How to make an object immutable?
-- What do we gain from class immutability?
-- What is defensive copying?
+### - How can we construct a new object in Java (i.e. new operator, cloning, deserialization, reflection -> Class.forName())f
+### - what primitive types do you know? What is the size of each?
+## - Describe what is the meaning of following keywords: protected, private, public, no keyword.
+### - What is the difference between override and overload + static and runtime polymorphism.
+### - How can you prevent class from being subclassed?
+#### - Transient keyword, what is it used for
+### - How to make an object immutable?
+### - What do we gain from class immutability?
+### - What is defensive copying?
 - Hard, soft, weak, phantom references. What are differences? How to make a cache from weak references? What can be used instead of finalize method?
-- How to make a memory leak in Java? How to analyze memory leaks in Java? What tools you can use?
+### - How to make a memory leak in Java? How to analyze memory leaks in Java? What tools you can use?
 - What is new in JDK7/8/9/10...?
-- Checked vs unchecked exceptions. Can we catch Error? How to make a good API?
+# - Checked vs unchecked exceptions. Can we catch Error?
 - Exceptions translation
 - Overloading vs overriding vs hiding
-- Rules of overloading
+### - Rules of overloading
 - Can static method be overloaded? What is hiding? What will happen if extending class will define the non-static method with the same name?
-- Difference between object and primitive?
-- How to observe polymorphism in Java? Provide an example
-- Can interface have methods implemented?
-- Can interface have private methods?
-- final, finalize, finally
-- When finally is not going to be executed?
+## - Difference between object and primitive?
+### - How to observe polymorphism in Java? Provide an example
+## - Can interface have methods implemented?
+#### - Can interface have private methods?
+# - final, finalize, finally
+# - When finally is not going to be executed?
 - Will finally be executed when we override SecurityManager behavior?
-- Boxing, Unboxing, Autoboxing - performance implications
-- What is try-with-resources in Java7?
-- What does it mean that a stream from Java8 is lazy?
-- What are terminal vs non-terminal operations in streams? What are types returned from such operations?
-- For loop performance vs Stream performance for 100 items.
+## - Boxing, Unboxing, Autoboxing - performance implications
+## - What is try-with-resources in Java7?
+## - What does it mean that a stream from Java8 is lazy?
+## - What are terminal vs non-terminal operations in streams? What are types returned from such operations?
+## - For loop performance vs Stream performance for 100 items.
 - How to analyze the app performance? What tools you can use?
 - What good pratices for benchmarking in Java do you know?
 - Clone in Java (Cloneable interface, clone() method). How to implement a clone mechanism properly? Shall we use that at all?
 - How to serialize object in Java? What is versionUID?
 - What is "transient" keyword?
 - Can Java return a covariant type?
-- String in in Java. intern() method. Security of a String pool
+##### - String in in Java. intern() method. Security of a String pool
 - Can we extend a String?
 - How many compilers are there in the JDK distribution?
-- What is immutable object pattern? Is it used in java (JDK)? Describe immutable types
-- What design patterns are used in JDK?
+### - What is immutable object pattern? Is it used in java (JDK)? Describe immutable types
+### - What design patterns are used in JDK?
 - What methods are defined in Object class in Java?
 - There are two methods with same name - one takes the argument of Object, another one of String. Which one will be invoked if we pass null and why?
-- Is it a good practice to use "Optional" as a method argument? How about serialization?
-- What do you think about returning a Stream from a method?
+### - Is it a good practice to use "Optional" as a method argument? How about serialization?
+### - What do you think about returning a Stream from a method?
 - There is set of users. Each user contains set of languages he speaks. How to get all languages spoken by all users? (stream with flatmap and distincts)
 - Fields in lambdas are effective final. How we can bypass that to i.e. increment a value inside (use objects like i.e. AtomicInteger to increment)
 - What is a classloader? What is a hierarchy of classloaders?
 - How to create an annotation?
 - Is it possible to have a final constructor and why?
-- Do we need to override hashcode if we override equals?
+# - Do we need to override hashcode if we override equals?
 - What is a ThreadLocal? Where can it be helpful?
 - What is a difference between Inner and nested class?
-- When we need a private constructor?
+#### - When we need a private constructor?
 - How can we make a XOR in Java?
 - How can we create a copy constructor?
 - What is a Dynamic Binding?
 - Explain when default methods in interfaces can be handy.
 
 ## Generics
-- What is "type erasure"? Why it was introduced? What version of Java introduced generics?
+### - What is "type erasure"? Why it was introduced? What version of Java introduced generics?
 - PECS - when to use super, extends. What limitations they have? (i.e. putting/getting from collections, cast required etc.)
 - invariance vs covariance vs contravariance
 - Are arrays covariant?
@@ -85,7 +85,7 @@
 - Can we have generic fields in a non-generic class?
 
 ## Multithreading
-- What is deadlock, race-condition, data-race, livelock, starvation?
+### - What is deadlock, race-condition, data-race, livelock, starvation?
 - What is the thread lifecycle (states) in JVM?
 - What is double-checked-locking? How to make it right?
 - How to implement singleton in the safe way? Enums as singletons.
@@ -93,11 +93,11 @@
 - What methods should be overridden in HttpServlet, what can we tell about thread safety of fields in servlet?
 - java.util.concurrent -> CountDownLatch, Semaphores, Read/Write locks (ReentrantLock, ReentrantReadWriteLock), Atomic types etc.
 - synchronized based on method, object, class etc. Pros/Cons of each solution
-- How Atomic types work? What is CAS?
-- How volatile works?
-- How to create and start a new thread?
-- How to stop a thread? (stop is deprecated)
-- Runnable vs Callable
+### - How Atomic types work? What is CAS?
+### - How volatile works?
+## - How to create and start a new thread?
+## - How to stop a thread? (stop is deprecated)
+# - Runnable vs Callable
 - Describe Features
 - What is the difference between synchronization of static and non-static methods?
 - What does it mean that lock is reentrant?
@@ -126,11 +126,11 @@
 - Implement double check idiom.
 
 ## Collections
-- Draw diagram of Java collections.
+# - Draw diagram of Java collections.
 
 ## Maps
 - How does Map interface correspond with Collection interface?
-- Map vs Switch statement performance?
+ - Map vs Switch statement performance?
 - Would you use Switch with String or Map instead?
 - What types can be used in switch (in different Java versions)?
 
@@ -190,8 +190,8 @@
 - Implement Stack / List / Queue methods using only recursion.
 
 ## JVM, Garbage Collector, JIT
-- Java memory model (heap vs stack, young generation vs old generation, metaspace etc.)
-- What flags do you know for tuning JVM/Garbage Collector?
+### - Java memory model (heap vs stack, young generation vs old generation, metaspace etc.)
+### - What flags do you know for tuning JVM/Garbage Collector?
 - How many thread simple program that prints "Hello world" to console has?
 - Describe Java memory model
 - How can we measure performance of the application? What tools do you know for such purpose?
